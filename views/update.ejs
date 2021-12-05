@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+				<meta charset="UTF-8">
+				<meta name="viewport" content="width=device-width, initial-scale=1.0">
+				<link rel="stylesheet" href="/css/index.css">
+				<title>Update | Todo List</title>
+</head>
+<body>
+				<h1>Update : <%= result._id %></h1> 
+				<div class="forms">
+								<form method="POST" action="/update?id=<%= result._id %>" >
+												<input type="text" name="user" value="<%= result.user %>" placeholder="Username">
+												<input type="email" name="email" value="<%= result.email %>" placeholder="Email">
+												<input type="text" name="sub" value="<%= result.sub %>" placeholder="Subject">
+												<button type="submit">Update data</button>
+								</form>
+				</div>
+    <script>
+    		
+    </script>
+</body>
+</html>
